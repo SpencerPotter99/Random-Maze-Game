@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload = "initialize()">
+    <div class="maze-div" id="main-game">
+        <canvas id="mazeCanvas" width="1000" height="1000" style = "width: 50%; height: 50%; position: relative"></canvas>
+
+        <div class="maze-menu-div">
+            <h1 style="line-height: 0.8;">How to Play:</h1>
+            <h4 style="line-height: 0.8;">To win help the man get back home</h4>
+            <h2>controls:</h2>
+            <h4 style="line-height: 0.8;">h: toggle hints</h4>
+            <h4 style="line-height: 0.8;">p: toggle shortest path</h4>
+            <h4 style="line-height: 0.8;">b: toggle breadcrumbs</h4>
+            <h4 style="line-height: 0.8;">press any of the sizes to change the maze size</h4>
+            <button class="menu-button" onclick="changeSize(5)">Size 5x5</button>
+            <br>
+            <button class="menu-button" onclick="changeSize(10)">Size 10x10</button>
+            <br>
+            <button class="menu-button" onclick="changeSize(15)">Size 15x15</button>
+            <br>
+            <button class="menu-button" onclick="changeSize(20)">Size 20x20</button>
+            <div class="score" id="displayScore">
+
+            </div>
+            <div class="score" id="highScores">
+
+            </div>
+            <div class="score" id="timer">
+                
+            </div>
+        </div>
+</div>
+
+<script>
+
+</script>
+    <script src="maze.js"></script>
+</body>
+</html>

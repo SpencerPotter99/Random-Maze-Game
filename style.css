@@ -1,0 +1,63 @@
+body {
+        background-image: url('./Static/pixelBackground.jpg'); /* Replace 'image.jpg' with the path to your image */
+        background-size: cover; /* Cover the entire background */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Do not repeat the background image */
+        height: 100vh; /* Ensure the background covers the entire viewport height */
+        margin: 0;
+        overflow: hidden;
+}
+br {
+    margin: 20px; /* Adjust the margin value as needed */
+}
+
+.score{
+    margin: 0 5px; /* Add space between buttons */
+    background-color: rgba(255, 255, 255, 0.7); /* Background with transparency */
+    padding: 10px 20px; /* Add padding to make buttons bigger */
+    border-radius: 5px;
+}
+
+.maze-div {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    padding: 10px;
+}
+
+.menu-div{
+    display: table; /* Use table layout */
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-button {
+    display: inline-block; /* Lay out buttons horizontally */
+    margin: 0 5px; /* Add space between buttons */
+    background-color: rgba(255, 255, 255, 0.7); /* Background with transparency */
+    padding: 10px 20px; /* Add padding to make buttons bigger */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer
+}
+
+.maze-menu-div{
+    display: table;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: .5;
+    max-width: 25%
+}
+
+canvas {
+    padding: 10px;
+    margin: auto;
+    display: block;
+    width: 50%; 
+    height: 50%
+}
